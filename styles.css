@@ -14,55 +14,6 @@ article section p {padding-left: 3%;}
 #topic2, #topic3 {height: 100%; width: 20%; float: left;}
 #logo img {max-height: 100%; max-width: 100%;}
 #topic1, #topic2, #topic3, footer
-body {
-            width: 1024px; /* Fixed width to maintain desktop layout */
-            overflow-x: auto; /* Allow horizontal scroll if needed */
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #logo img {
-            width: 100%; /* Ensure the logo scales within its container */
-        }
-
-        nav {
-            display: flex;
-            justify-content: flex-end;
-            flex-grow: 1;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li {
-            display: inline;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        main {
-            margin-top: 20px;
-        }
-
-        section {
-            margin-bottom: 40px;
-        }
-
-        section img {
-            max-width: 100%;
-            height: auto; /* Ensure images are responsive */
-        }
 {
 color: red;
 box-sizing: border-box;
@@ -85,3 +36,8 @@ main:hover aside img {opacity: 1;}
 section img {max-height: 25%; max-width: 25%; margin-top: 1%;}
 header {font-size: 120%;}
 a {text-decoration: none; color: red;}
+
+@media only screen and (max-width: 768px) {
+    /* Add mobile-specific styles here */
+    header { font-size: 100%; } /* Adjust font size for header */
+    /* Add more styles as needed */
