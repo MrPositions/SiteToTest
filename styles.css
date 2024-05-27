@@ -1,0 +1,87 @@
+* {padding: 0; margin: 0;}
+html {height: 100%}
+body {height: 100%; background: gold;}
+header {height: 10%; background: #090809;}
+main{height: 80%; background: green;}
+footer{height: 10%; background: #090809;}
+article {height: 100%; background: #d3d3d3; width: 60%; float:left;}
+aside {height: 100%; background: #ffffff; width: 40%; float: right;}
+article {overflow-y: scroll;}
+article section {margin-bottom: 5%; padding-left: 2%;}
+article section h1 {margin-bottom: 3%;}
+article section p {padding-left: 3%;}
+#logo, #space, #topic1,
+#topic2, #topic3 {height: 100%; width: 20%; float: left;}
+#logo img {max-height: 100%; max-width: 100%;}
+#topic1, #topic2, #topic3, footer
+body {
+            width: 1024px; /* Fixed width to maintain desktop layout */
+            overflow-x: auto; /* Allow horizontal scroll if needed */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo img {
+            width: 100%; /* Ensure the logo scales within its container */
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 1;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        main {
+            margin-top: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto; /* Ensure images are responsive */
+        }
+{
+color: red;
+box-sizing: border-box;
+padding-top: 2%;
+}
+footer {text-align: center; padding-top:2%;}
+img {border-radius: 1%;}
+aside {text-align: center;}
+.helper {
+display: inline-block;
+width: 0%;
+height: 100%;
+vertical-align: middle;
+}
+aside img {
+max-width: 95%; max-height: 99%; opacity: 0;
+transition: opacity 500ms; vertical-align: middle;
+}
+main:hover aside img {opacity: 1;}
+section img {max-height: 25%; max-width: 25%; margin-top: 1%;}
+header {font-size: 120%;}
+a {text-decoration: none; color: red;}
