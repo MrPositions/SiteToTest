@@ -1,128 +1,101 @@
- * {
-            padding: 0;
-            margin: 0;
-        }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    background: gold;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+header, footer {
+    background: #090809;
+    color: red;
+    padding: 1rem 0;
+}
+header {
+    flex: 0 0 auto;
+}
+footer {
+    flex: 0 0 auto;
+    text-align: center;
+}
+main {
+    flex: 1 0 auto;
+    display: flex;
+    background: green;
+}
+.container-fluid {
+    padding: 0;
+}
+article {
+    background: #d3d3d3;
+    overflow-y: auto;
+}
+aside {
+    background: #ffffff;
+    text-align: center;
+}
+article, aside {
+    height: calc(100vh - 10% - 10%); /* Subtract header and footer height */
+}
+#logo img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.custom-heading {
+    color: red;
+}
+img {
+    border-radius: 1%;
+}
+.helper {
+    display: inline-block;
+    width: 0%;
+    height: 100%;
+    vertical-align: middle;
+}
+aside img {
+    max-width: 95%;
+    max-height: 99%;
+    opacity: 0;
+    transition: opacity 500ms;
+    vertical-align: middle;
+}
+main:hover aside img {
+    opacity: 1;
+}
+section img {
+    max-height: 25%;
+    max-width: 25%;
+    margin-top: 1%;
+}
+header {
+    font-size: 120%;
+}
+a {
+    text-decoration: none;
+    color: red;
+}
+@media (min-width: 768px) {
+    .article-content {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+    .aside-content {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+}
+#menu {
+    display: none; /* Hide the menu by default */
+    /* Add styling for the menu */
+}
 
-        /* Full height for html and body */
-        html, body {
-            height: 100%;
-        }
-
-        /* Background for body */
-        body {
-            background: gold;
-        }
-
-        /* Header styles */
-        header {
-            height: 10%;
-            background: #090809;
-            font-size: 120%;
-        }
-
-        /* Main section styles */
-        main {
-            height: 80%;
-            background: green;
-        }
-
-        /* Footer styles */
-        footer {
-            height: 10%;
-            background: #090809;
-            color: red;
-            text-align: center;
-            padding-top: 2%;
-        }
-
-        /* Article and aside styles */
-        article {
-            height: 100%;
-            background: #d3d3d3;
-            width: 60%;
-            float: left;
-            overflow-y: scroll;
-        }
-
-        aside {
-            height: 100%;
-            background: #ffffff;
-            width: 40%;
-            float: right;
-            text-align: center;
-        }
-
-        /* Article sections styles */
-        article section {
-            margin-bottom: 5%;
-            padding-left: 2%;
-        }
-
-        article section h1 {
-            margin-bottom: 3%;
-        }
-
-        article section p {
-            padding-left: 3%;
-        }
-
-        /* Logo and topic styles */
-        #logo, #space, #topic1, #topic2, #topic3 {
-            height: 100%;
-            width: 20%;
-            float: left;
-        }
-
-        #logo img {
-            max-height: 100%;
-            max-width: 100%;
-        }
-
-        #topic1, #topic2, #topic3 {
-            color: red;
-            box-sizing: border-box;
-            padding-top: 2%;
-        }
-
-        /* Image styles */
-        img {
-            border-radius: 1%;
-        }
-
-        aside img {
-            max-width: 95%;
-            max-height: 99%;
-            opacity: 0;
-            transition: opacity 500ms;
-            vertical-align: middle;
-        }
-
-        main:hover aside img {
-            opacity: 1;
-        }
-
-        section img {
-            max-height: 25%;
-            max-width: 25%;
-            margin-top: 1%;
-        }
-
-        a {
-            text-decoration: none;
-            color: red;
-        }
-/* Custom CSS for specific screen widths */
-        @media (min-width: 768px) {
-            .article-content {
-                flex: 0 0 60%;
-                max-width: 60%;
-            }
-            .aside-content {
-                flex: 0 0 40%;
-                max-width: 40%;
-            }
-        }
-
-        .custom-heading {
-            color: red;
-        }
+#menu-icon {
+    cursor: pointer;
+    /* Style the hamburger menu icon */
+}
