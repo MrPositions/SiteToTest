@@ -1,1 +1,140 @@
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: gold;
+}
+
+header, footer {
+    background: #090809;
+    color: red;
+    text-align: center;
+    padding: 1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo, #space, #topic1, #topic2, #topic3 {
+    height: 100%;
+    flex: 1;
+    text-align: center;
+}
+
+#logo img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+main {
+    height: 80%;
+    background: lightgrey;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+article {
+    height: 100%;
+    background: #d3d3d3;
+    width: 60%;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+aside {
+    height: 100%;
+    background: #ffffff;
+    width: 40%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+article section {
+    margin-bottom: 5%;
+}
+
+article section h1 {
+    margin-bottom: 3%;
+}
+
+article section p {
+    padding-left: 3%;
+}
+
+footer {
+    padding-top: 2%;
+}
+
+img {
+    border-radius: 1%;
+    max-width: 100%;
+    height: auto;
+}
+
+aside img {
+    max-width: 95%;
+    max-height: 99%;
+    opacity: 0;
+    transition: opacity 500ms;
+    vertical-align: middle;
+}
+
+main:hover aside img {
+    opacity: 1;
+}
+
+section img {
+    max-height: 25%;
+    max-width: 25%;
+    margin-top: 1%;
+}
+
+header {
+    font-size: 120%;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    article, aside {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #logo, #space, #topic1, #topic2, #topic3 {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    #logo img {
+        max-width: 100px;
+    }
+
+    .custom-heading {
+        font-size: 1.2em;
+    }
+
+    section img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
