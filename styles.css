@@ -35,7 +35,7 @@ header {
 
 main {
     height: 80%;
-    background: lightgrey;
+    background: green;
     display: flex;
     flex-direction: row;
     padding: 0;
@@ -113,7 +113,10 @@ a {
     main {
         flex-direction: column;
     }
-
+    body {
+        background: gold; /* Add the background color for smaller screens */
+    }
+}
     article, aside {
         width: 100%;
         padding: 10px;
