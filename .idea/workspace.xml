@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="444fb14f-db12-445c-8f66-320b0519fcfc" name="Changes" comment="a">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functionality.js" beforeDir="false" afterPath="$PROJECT_DIR$/functionality.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
@@ -179,7 +178,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716904361145</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="a">
+      <option name="closed" value="true" />
+      <created>1716909307232</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1716909307232</updated>
+    </task>
+    <task id="LOCAL-00016" summary="a">
+      <option name="closed" value="true" />
+      <created>1716913104008</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1716913104008</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
