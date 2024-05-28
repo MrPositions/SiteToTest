@@ -21,23 +21,22 @@ nav .w3-bar-item:hover {
     background-color: #ddd;
 }
 
-main {
+.content-container {
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
     justify-content: space-between;
+    padding: 20px;
 }
 
 article {
-    flex: 1 1 60%;
+    flex: 0 1 60%; /* Adjust the flex basis to 60% */
     margin-right: 20px;
 }
 
 aside {
-    flex: 1 1 30%;
+    flex: 0 1 40%; /* Adjust the flex basis to 40% */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align images to the top of the aside */
 }
 
 aside img {
@@ -52,7 +51,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    main {
+    .content-container {
         flex-direction: column;
     }
 
