@@ -24,7 +24,7 @@
     </nav>
 
  </header>
-<main class="w3-container">
+<main class="w3-container content-container">
     <article>
         <section data-img="images/RaspPosi 2.png" class="w3-margin-bottom" width="50" height="100">
             <h1>☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀☀</h1>
@@ -74,23 +74,7 @@
     Made by Isolated Lamentation for Noble Mansion, Enfinities, and TetraGrey
 </footer>
 
-    <script type="text/javascript" src="functionality.js">
-        document.addEventListener("DOMContentLoaded", function() {
-        const sections = document.querySelectorAll("article section");
-        const asideImage = document.getElementById("aside-image");
-
-        sections.forEach(section => {
-            section.addEventListener("mouseenter", () => {
-                const imgSrc = section.getAttribute("data-img");
-                asideImage.src = imgSrc;
-            });
-
-            section.addEventListener("mouseleave", () => {
-                asideImage.src = "";
-            });
-        });
-    });
-    </script>
+    <script type="text/javascript" src="functionality.js"></script>
 
 </body>
 </html>

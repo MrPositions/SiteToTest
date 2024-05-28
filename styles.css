@@ -1,91 +1,54 @@
-html, body {
-    height: 100%;
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-}
-
-body {
-    background: gold;
-}
-
-header, footer {
-    background: #090809;
-    color: red;
-    text-align: center;
-    padding: 1em;
+    background-color: #fff; /* Ensure the background is white */
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#logo, nav {
-    flex: 1;
+    background-color: #f1f1f1;
+    padding: 20px;
     text-align: center;
 }
 
-#logo img {
-    max-height: 100px;
-    width: auto;
+nav .w3-bar-item {
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+nav .w3-bar-item:hover {
+    background-color: #ddd;
 }
 
 main {
-    height: 80%;
-    background: green;
     display: flex;
-    flex-direction: row;
-    padding: 0;
-    margin: 0;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
 }
 
 article {
-    height: 100%;
-    background: #d3d3d3;
-    width: 60%;
-    overflow-y: auto;
-    box-sizing: border-box;
-    padding: 20px;
+    flex: 1 1 60%;
+    margin-right: 20px;
 }
 
 aside {
-    height: 100%;
-    background: #ffffff;
-    width: 40%;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 20px;
-    overflow-y: auto;
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-article section {
-    margin-bottom: 5%;
-}
-
-article section h1 {
-    margin-bottom: 3%;
-}
-
-article section p {
-    padding-left: 3%;
-}
-
-footer {
-    padding-top: 2%;
-}
-
-img {
-    border-radius: 1%;
+aside img {
     max-width: 100%;
     height: auto;
 }
 
-aside img {
-    max-width: 95%;
-    max-height: 99%;
-    vertical-align: middle;
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -93,22 +56,11 @@ aside img {
         flex-direction: column;
     }
 
-    article, aside {
-        width: 100%;
-        padding: 10px;
+    article {
+        margin-right: 0;
     }
 
-    #logo, nav {
-        width: 100%;
-        text-align: center;
-    }
-
-    #logo img {
-        max-width: 100px;
-    }
-
-    section img {
-        max-height: 100%;
-        max-width: 100%;
+    aside {
+        margin-top: 20px;
     }
 }
