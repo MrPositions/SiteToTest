@@ -1,43 +1,55 @@
-* {padding: 0; margin: 0;}
-html {height: 100%}
-body {height: 100%; background: gold;}
-header {height: 10%; background: #090809;}
-main{height: 80%; background: green;}
-footer{height: 10%; background: #090809;}
-article {height: 100%; background: #d3d3d3; width: 60%; float:left;}
-aside {height: 100%; background: #ffffff; width: 40%; float: right;}
-article {overflow-y: scroll;}
-article section {margin-bottom: 5%; padding-left: 2%;}
-article section h1 {margin-bottom: 3%;}
-article section p {padding-left: 3%;}
-#logo, #space, #topic1,
-#topic2, #topic3 {height: 100%; width: 20%; float: left;}
-#logo img {max-height: 100%; max-width: 100%;}
-#topic1, #topic2, #topic3, footer
-{
-color: red;
-box-sizing: border-box;
-padding-top: 2%;
+* {
+    padding: 0;
+    margin: 0;
 }
-footer {text-align: center; padding-top:2%;}
-img {border-radius: 1%;}
-aside {text-align: center;}
-.helper {
-display: inline-block;
-width: 0%;
-height: 100%;
-vertical-align: middle;
+html, body {
+    height: 100%;
+}
+.bg-gold {
+    background-color: gold;
+}
+article {
+    height: 100%;
+}
+article section {
+    margin-bottom: 5%;
+    padding-left: 2%;
+}
+article section h1 {
+    margin-bottom: 3%;
+}
+article section p {
+    padding-left: 3%;
+}
+#logo img {
+    max-height: 100%;
+    max-width: 100%;
+}
+footer {
+    padding-top: 2%;
+}
+footer p {
+    margin: 0;
+}
+img {
+    border-radius: 1%;
 }
 aside img {
-max-width: 95%; max-height: 99%; opacity: 0;
-transition: opacity 500ms; vertical-align: middle;
+    transition: opacity 500ms;
+    vertical-align: middle;
 }
-main:hover aside img {opacity: 1;}
-section img {max-height: 25%; max-width: 25%; margin-top: 1%;}
-header {font-size: 120%;}
-a {text-decoration: none; color: red;}
-
-@media only screen and (max-width: 768px) {
-    /* Add mobile-specific styles here */
-    header { font-size: 100%; } /* Adjust font size for header */
-    /* Add more styles as needed */
+main:hover aside img {
+    opacity: 1;
+}
+section img {
+    max-height: 25%;
+    max-width: 25%;
+    margin-top: 1%;
+}
+header {
+    font-size: 120%;
+}
+a {
+    text-decoration: none;
+    color: red;
+}
