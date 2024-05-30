@@ -1,11 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const sections = document.querySelectorAll('article section');
-    const asideImg = document.getElementById('sideImg');
+let sideImg = document.getElementById("sideImg")
+let allSections = document.getElementsByTagName("section")
 
-    sections.forEach(section => {
-        section.addEventListener('mouseenter', () => {
-            const imgSrc = section.getAttribute('data-img');
-            asideImg.src = imgSrc;
-        });
-    });
-});
+for (let section of allSections) {
+section.addEventListener("mouseenter", changeImg)
+section.addEventListener("touchstart", changeImg)
+}
+
+function changeImg() {
+let imgLink = this.getAttribute("data-img")
+sideImg.setAttribute("src", imgLink)
+}

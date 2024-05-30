@@ -23,18 +23,16 @@ nav .w3-bar-item:hover {
 
 .content-container {
     display: flex;
+    flex-direction: row;
     padding: 20px;
-    position: relative;
 }
 
 article {
     flex: 0 1 60%; /* Article covers 60% */
-    order: 1; /* Ensure article is first */
 }
 
 aside {
     flex: 0 1 40%; /* Aside covers 40% */
-    order: 2; /* Ensure aside is second */
     position: fixed;
     right: 0;
     top: 20%;
@@ -46,15 +44,14 @@ aside {
     z-index: 1; /* Ensure it stays above other content */
 }
 
-aside img.aside-img {
+aside img#sideImg {
     width: 100%;
     height: auto;
     max-width: 100%;
     margin-bottom: 20px; /* Add space between aside images */
-    display: none; /* Initially hidden */
 }
 
-section img.section-img {
+section img {
     width: 100%;
     height: auto;
     margin-top: 10px;
@@ -79,18 +76,20 @@ footer {
     }
 
     article {
-        margin-right: 0;
         order: 2; /* Ensure article comes second on smaller screens */
+        width: 100%; /* Full width for article on smaller screens */
     }
 
     aside {
         order: 1; /* Ensure aside comes first on smaller screens */
         width: 100%; /* Full width for aside on smaller screens */
-        margin-bottom: 20px; /* Space between aside and article */
         position: static; /* Reset fixed positioning */
+        margin-bottom: 20px; /* Space between aside and article */
     }
 
-    aside img.aside-img {
+    aside img#sideImg {
         width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 }
