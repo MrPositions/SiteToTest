@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #fff; /* Ensure the background is white */
+    background-color: #fff;
 }
 
 header {
@@ -40,8 +40,15 @@ aside {
 }
 
 aside img {
-    max-width: 100%;
+    width: 100%; /* Ensure images take up the full width of the aside */
     height: auto;
+    max-width: 100%;
+}
+
+section img.section-img {
+    width: 100%; /* Ensure section images take up the full width of the section */
+    height: auto;
+    margin-top: 10px; /* Add some space between text and the image */
 }
 
 footer {
