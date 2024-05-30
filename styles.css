@@ -23,32 +23,47 @@ nav .w3-bar-item:hover {
 
 .content-container {
     display: flex;
-    justify-content: space-between;
     padding: 20px;
+    position: relative; /* Ensure positioning context */
 }
 
 article {
-    flex: 0 1 60%; /* Adjust the flex basis to 60% */
-    margin-right: 20px;
+    flex: 0 1 60%; /* Article covers 60% */
+    order: 1; /* Ensure article is first */
 }
 
 aside {
-    flex: 0 1 40%; /* Adjust the flex basis to 40% */
+    flex: 0 1 40%; /* Aside covers 40% */
+    order: 2; /* Ensure aside is second */
+    position: fixed;
+    right: 0;
+    top: 20%;
+    width: 40%;
     display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Align images to the top of the aside */
+    flex-direction: column; /* Stack images vertically */
+    justify-content: flex-start;
+    pointer-events: none; /* Allow scrolling to pass through */
 }
 
-aside img {
-    width: 100%; /* Ensure images take up the full width of the aside */
+aside img.aside-img {
+    width: 100%;
     height: auto;
     max-width: 100%;
+    margin-bottom: 20px; /* Add space between aside images */
+    display: none; /* Initially hidden */
 }
 
 section img.section-img {
-    width: 100%; /* Ensure section images take up the full width of the section */
+    width: 100%;
     height: auto;
-    margin-top: 10px; /* Add some space between text and the image */
+    margin-top: 10px;
+}
+
+p img {
+    max-width: 50%; /* Images within paragraphs are smaller */
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Center images within paragraphs */
 }
 
 footer {
@@ -64,9 +79,17 @@ footer {
 
     article {
         margin-right: 0;
+        order: 2; /* Ensure article comes second on smaller screens */
     }
 
     aside {
-        margin-top: 20px;
+        order: 1; /* Ensure aside comes first on smaller screens */
+        width: 100%; /* Full width for aside on smaller screens */
+        margin-bottom: 20px; /* Space between aside and article */
+        position: static; /* Reset fixed positioning */
+    }
+
+    aside img.aside-img {
+        width: 100%;
     }
 }
