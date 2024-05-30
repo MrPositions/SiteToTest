@@ -24,7 +24,7 @@ nav .w3-bar-item:hover {
 .content-container {
     display: flex;
     padding: 20px;
-    position: relative; /* Ensure positioning context */
+    position: relative;
 }
 
 article {
