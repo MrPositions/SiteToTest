@@ -43,6 +43,7 @@ aside {
     flex-direction: column; /* Stack images vertically */
     justify-content: flex-start;
     pointer-events: none; /* Allow scrolling to pass through */
+    z-index: 1; /* Ensure it stays above other content */
 }
 
 aside img.aside-img {
